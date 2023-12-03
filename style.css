@@ -1,0 +1,351 @@
+
+:root {
+  /** Dark side **/
+  --dark-background: #282921;
+  --dark-border: #54554E;
+  --dark-color: #121110;
+  --black-dot-background: #151514;
+  --black-dot-border: #E4E4E4;
+  /** Lit side **/
+  --indigo-background: #6331A0;
+  --indigo-border: #5d6baa;
+  --indigo-color: #3E255D;
+  --gray-border: #e8e8ea;
+  --gray-dots: #e8e8ea;
+  /** general **/
+  --white: #fff;
+}
+body{
+	background-color: rgba(	12, 12, 12, 1.0);
+	display: grid;
+  overflow: hidden;
+  
+  min-height: 100vh;
+  position: relative;
+/*	background-image: url(https://media.tenor.com/D_G5lJ2SnckAAAAC/stars-shooting.gif);
+	image-rendering: -webkit-optimize-contrast;
+	background-size: cover;
+	image-rendering: crisp-edges;
+ image-rendering: -moz-crisp-edges;          /* Firefox 
+ image-rendering: -o-crisp-edges;            /* Opera 
+ image-rendering: -webkit-optimize-contrast;  Webkit (non-standard naming)
+ -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */ 
+
+
+}
+
+@font-face {
+    
+    font-family: Mam;
+    src: url(Mammoth.ttf);
+    font-family: down;
+    src: url(down.ttf);
+}
+@font-face{
+  font-family: myFont;
+  src: url(storm.ttf);
+}
+
+
+
+.head{
+  font-size: 7.7vw;
+
+
+}
+
+#MyHeading{
+  font-size: 7.7vw;
+}
+ #MyHeading {
+  font-family: down;
+   
+    margin: 0 auto; width: 100%;
+   
+  text-decoration: bold;
+  visibility: hidden;
+  text-align: center;
+  margin-top: 5%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 6.1vw;
+  position: absolute;
+  color: white;
+  container-name: head;
+ }
+#buttons{
+  visibility: hidden;
+  position: absolute;
+  
+  top: -150%;
+  left: -100%;
+
+  width: 1000%;
+}
+
+.b1{
+  position: relative;
+   display: inline-block;
+
+}
+.b2{
+  position: relative;
+
+  display: inline-block;
+  
+}
+
+#dot {
+  position:absolute ;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(251, 255, 156, 0.42);
+  border-radius: 50%;
+  margin-top: 15%;
+  display: inline-block;
+  box-shadow:  0px 0px 100px 70px rgba(251, 255, 156, 0.5);
+  margin-left: 50%;
+  position: absolute;
+
+}
+
+
+
+button {
+  border-radius: 8px;
+  background-color: #7645B2;
+  border: none;
+  color: white;
+  padding: 30px 80px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #7220D7;
+}
+
+.b2:before{
+  content: 'Prob. of me liking u \a <1';
+   white-space: pre;
+}
+.b2:hover::before{
+
+  content: "Prob. of me liking u \a =1 <3";
+  white-space: pre;
+}
+
+
+
+#rotate {
+  
+  font-size: 60px;
+  position: fixed;
+  color: white;
+  /* writing-mode: vertical-lr;
+    -webkit-transform: rotate(240deg);
+    -moz-transform: rotate(60deg);*/
+    margin-top: 13.5%;
+    margin-left: 47.5%;
+}
+.toggle--label {
+  width: 200px;
+  height: 100px;
+  background: var(--dark-color);
+  border-radius: 100px;
+  border: 5px solid var(--dark-border);
+  display: flex;
+  position: relative;
+    margin-left: 45%;
+    margin-top: 35%;
+  transition: all 350ms ease-in;
+}
+
+.toggle--checkbox {
+  position: relative;
+
+    margin-left: 50%;
+    display: none;
+}
+
+button.btn1{
+		padding: 10px 10px;
+		background-color: 	rgba(	199, 199, 199, 1.0);
+		cursor: pointer	;
+		margin-left: 50%;
+		margin-top: 30%;
+}		
+
+.toggle--label:before {
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  transition: all 350ms ease-in;
+  content: '';
+  width: 82px;
+  z-index: 999;
+  height: 82px;
+  border: 2px solid var(--black-dot-border);
+  box-shadow: 0px 0px 4px 3px rgba(228, 228, 228, 0.5);
+  top: 5px;
+  left: 10px;
+  position: absolute;
+  border-radius: 82px;
+  background: var(--black-dot-background);
+}
+
+@keyframes reverse {
+  0% {
+    left: 104px;
+    width: 82px;
+  }
+  60% {
+    left: 72px;
+    width: 112px;
+  }
+  100% {
+    left: 4px;
+  }
+
+
+}
+
+
+
+
+.toggle--label-background {
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 108px;
+  top: 30px;
+  transition: all 150ms ease-in;
+}
+.toggle--label-background1 {
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 120px;
+  top: 20px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label-background2 {
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 110px;
+  top: 50px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label-background3 {
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 150px;
+  top: 70px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label-background4 {
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 135px;
+  top: 28px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label-background5 {
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 120px;
+  top: 75px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--label-background6 {
+  width: 3px;
+  height: 3px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 125px;
+  top: 45px;
+  transition: all 150ms ease-in;
+}
+
+.toggle--checkbox:checked + element {
+
+  // Element can be after our checkbox
+}
+
+toggle--checkbox:checked ~ .background {
+  background: var(--indigo-background);
+}
+
+.toggle--checkbox:checked + .toggle--label {
+  background: var(--indigo-color);
+  border-color: var(--indigo-border);
+}
+
+.toggle--checkbox:checked + .toggle--label:before {
+  background: var(--white);
+  border-color: var(--gray-border);
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes switch {
+  0% {
+    left: 4px;
+  }
+  60% {
+    left: 4px;
+    width: 112px;
+  }
+  100% {
+    left: 104px;
+    width: 82px;
+  }
+
+}
+.toggle--label:after {
+  transition-delay: 0ms;
+  transition: all 250ms ease-in;
+  position: absolute;
+  content: '';
+  box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+  left: 143px;
+  top: 23px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.toggle--checkbox:checked + .toggle--label:after {
+  transition-delay: 250ms;
+  z-index: 999;
+  opacity: 1;
+}
